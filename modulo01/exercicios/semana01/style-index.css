@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+h1{
+    background-image: url("./images/fundo-titulo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: brown;
+    text-align: center;
+    background-color: wheat;
+    margin-top: 60px;
+}
+p{
+    font-size: 14px;
+}
+button{
+    border-radius: 15%;
+    padding: 10px;
+    border: solid 2px black;
+    margin-top: 20px;
+}
+.navbar {
+    flex-direction: row;
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.navbar img {
+    height: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.navbar a {
+    align-content: flex-end;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    transition: 300ms;
+}
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f2f2f2;
+    padding: 15px;
+    text-align: center;
+}
+
+  
