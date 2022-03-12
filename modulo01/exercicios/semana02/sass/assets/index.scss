@@ -106,15 +106,14 @@ body {
       .inner {
         z-index: 1;
         height: 40%;
-        width: 40%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 40px;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.705);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(13.5px);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
         .title-card {
@@ -122,8 +121,8 @@ body {
           overflow: auto;
           font-size: 1.2rem;
           text-align: center;
-          font-weight: 600;
-          color: $primaryColor;
+          font-weight: 700;
+          color: $secondaryColor;
           font-family: $primaryFont;
           margin: 0 0 20px 0;
         }
@@ -131,6 +130,7 @@ body {
           color: $secondaryColor;
           font-family: $primaryFont;
           text-align: center;
+          font-weight: 600;
         }
       }
     }
@@ -151,7 +151,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 20%;
+  height: 10%;
   padding: 1%;
   justify-items: center;
   .sub-card {
