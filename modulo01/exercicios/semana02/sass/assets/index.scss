@@ -19,6 +19,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: rgb(255, 255, 255);
+  z-index: 2;
   .img-logo {
     display: flex;
     margin: 12px;
@@ -103,6 +104,7 @@ body {
       background-image: url("/images/cardfull.jpg");
       background-size: cover;
       .inner {
+        z-index: 1;
         height: 40%;
         width: 40%;
         display: flex;
@@ -116,12 +118,13 @@ body {
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
         .title-card {
-          font-size: 24px;
+          display: flex;
+          overflow: auto;
+          font-size: 1.2rem;
           text-align: center;
           font-weight: 600;
           color: $primaryColor;
           font-family: $primaryFont;
-          position: relative;
           margin: 0 0 20px 0;
         }
         .subtitle-card {
@@ -137,6 +140,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  white-space: nowrap;
   justify-content: center;
   font-size: 30px;
   font-family: $primaryFont;

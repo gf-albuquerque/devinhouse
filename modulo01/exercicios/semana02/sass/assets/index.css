@@ -17,6 +17,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: white;
+  z-index: 2;
 }
 #navbar .img-logo {
   display: flex;
@@ -98,6 +99,7 @@ body {
   background-size: cover;
 }
 #main-container .main .card .inner {
+  z-index: 1;
   height: 40%;
   width: 40%;
   display: flex;
@@ -112,12 +114,13 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 #main-container .main .card .inner .title-card {
-  font-size: 24px;
+  display: flex;
+  overflow: auto;
+  font-size: 1.2rem;
   text-align: center;
   font-weight: 600;
   color: #d11982;
   font-family: "Open Sans", sans-serif;
-  position: relative;
   margin: 0 0 20px 0;
 }
 #main-container .main .card .inner .subtitle-card {
@@ -130,6 +133,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  white-space: nowrap;
   justify-content: center;
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
