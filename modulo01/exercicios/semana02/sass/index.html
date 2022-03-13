@@ -24,7 +24,7 @@
         <div class="btns-navbar">
             <a href="#main-container" class="btn-home">Home</a>
             <a href="#title-subcards" class="btn-events">Eventos</a>
-            <a href="#contact" class="btn-contact">Contato</a>
+            <a href="#contact-container" class="btn-contact">Contato</a>
         </div>
     </header>
     <div id="main-container">
@@ -44,25 +44,84 @@
     <h3 id="title-subcards"> Outros Eventos</h3>
     <ul id="sub-container">
         <li class="sub-card">
-            <img src='https://images.unsplash.com/photo-1611916656173-875e4277bea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400'
+            <img src='https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
                 alt='' class="img-subcard">
-            <h3><a href="">A Super Wonderful Headline</a></h3>
-            <p>Lorem ipsum sit dolor amit</p>
+            <h3><a href="" class="text-subcard">Lorem ipsum dolor sit amet.</a></h3>
+            <p class="subtext-subcard">01/08/2022</p>
         </li>
         <li class="sub-card">
-            <img src='https://images.unsplash.com/photo-1611083360739-bdad6e0eb1fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400'
+            <img src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
                 alt='' class="img-subcard">
-            <h3><a href="">What a Fantabulous Title!</a></h3>
-            <p>Lorem ipsum sit dolor amit</p>
+            <h3><a href="" class="text-subcard">Lorem ipsum dolor sit amet consectetur.</a></h3>
+            <p class="subtext-subcard">09/08/2022</p>
         </li>
         <li class="sub-card">
-            <img src='https://images.unsplash.com/photo-1613230485186-2e7e0fca1253?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400'
+            <img src='https://images.unsplash.com/photo-1603228254119-e6a4d095dc59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80'
                 alt='' class="img-subcard">
-            <h3><a href="">Positively Terrific Title</a></h3>
-            <p>Lorem ipsum sit dolor amit</p>
+            <h3><a href="" class="text-subcard">Lorem ipsum dolor sit.</a></h3>
+            <p class="subtext-subcard">10/08/2022</p>
         </li>
     </ul>
-    
+    <ul id="sub-container">
+        <li class="sub-card">
+            <img src='https://images.unsplash.com/photo-1619229665876-f54b2276b7bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+                alt='' class="img-subcard">
+            <h3><a href="" class="text-subcard">Lorem ipsum dolor sit amet.</a></h3>
+            <p class="subtext-subcard">20/08/2022</p>
+        </li>
+        <li class="sub-card">
+            <img src='https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+                alt='' class="img-subcard">
+            <h3><a href="" class="text-subcard">Lorem ipsum dolor sit amet consectetur.</a></h3>
+            <p class="subtext-subcard">22/08/2022</p>
+        </li>
+        <li class="sub-card">
+            <img src='https://images.unsplash.com/photo-1505224628533-c4fc42c389e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80'
+                alt='' class="img-subcard">
+            <h3><a href="" class="text-subcard">Lorem ipsum dolor sit.</a></h3>
+            <p class="subtext-subcard">25/08/2022</p>
+        </li>
+    </ul>
+    <h3 id="title-subcards"> Contato</h3>
+    <div id="contact-container">
+        <form class="form-container">
+            <div class="field" tabindex="1">
+                <label for="username" class="label">
+                    Seu Nome
+                </label>
+                <input name="username" type="text" placeholder="ex.: john doe" required class="inp-name">
+            </div>
+            <div class="field" tabindex="2">
+                <label for="email" class="label">
+                    Seu Email
+                </label>
+                <input name="email" type="text" placeholder="email@domain.com" required class="inp-email">
+            </div>
+            <div class="field" tabindex="3">
+                <label for="message" class="label">
+                    Sua Mensagem
+                </label>
+                <textarea name="message" placeholder="type here" required class="inp-mesage"></textarea>
+            </div>
+            <button type="reset" class="btn-send">Enviar Mensagem</button>
+        </form>
+    </div>
+    <footer id="footer-container">
+        <div class="footer-info-left">
+            <p>
+                2022 ©<a href="https://github.com/gf-albuquerque" target="_blank" class="footer-info-left">Gabriel Albuquerque </a>
+            </p>           
+        </div>
+        <div class="footer-info-center">
+            <p>Endereço</p>
+            <p>Rod. Admar Gonzaga, 2765 Florianópolis/SC - 88034-001</p>
+        </div>
+        <div class="footer-info-left">
+            <p>Contato</p>
+            <p>(48) 3231.4100</p>
+            <p>0800.048.1212</p>
+        </div>
+    </footer>
 </body>
 
 </html>

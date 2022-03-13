@@ -149,16 +149,129 @@ body {
 #sub-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-  height: 10%;
-  padding: 1%;
+  height: 30%;
+  padding: 2%;
   justify-items: center;
   .sub-card {
+    text-align: center;
+    width: 30%;
     background-color: #fff;
     border-radius: 0.5rem;
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
     padding-bottom: 1rem;
     overflow: hidden;
+    .text-subcard {
+      text-decoration: none;
+      font-family: $primaryFont;
+      color: $secondaryColor;
+      font-weight: 700;
+    }
+    .subtext-subcard {
+      text-decoration: none;
+      font-family: $primaryFont;
+      color: $secondaryColor;
+      font-weight: 600;
+    }
+    .img-subcard {
+      border-radius: 0.5rem 0.5rem 0 0;
+      width: 100%;
+      object-fit: cover;
+      max-height: max(10rem, 30vh);
+      justify-content: center;
+    }
+  }
+}
+#contact-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  .form-container {
+    font-family: "Saira Semi Condensed", sans-serif;
+    transition: all 0.5s ease;
+    width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    border-radius: 0.5rem;
+    margin-bottom: 3%;
+    .label {
+      width: 100%;
+      padding: 8px;
+      color: $secondaryColor;
+      font-weight: 500;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 2;
+      margin: 5px 10px 0 0;
+      text-align: center;
+    }
+    .inp-name {
+      background: rgba(255, 255, 255, 0.5);
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 8px 6px -6px #555;
+      padding: 10px;
+      width: 100%;
+    }
+    .inp-email {
+      @extend .inp-name;
+    }
+    .inp-mesage {
+      @extend .inp-name;
+      resize: none;
+    }
+    .btn-send {
+      background: $secondaryColor;
+      margin: 16px 0 50px 0;
+      padding: 8px 16px;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 5px 8px 6px -6px #555;
+      &:hover {
+        transition: all 0.3s ease 0s;
+        background: #2f4ad0;
+      }
+      &:active {
+        transition: all 0.3s ease 0s;
+        background: #6f87fc;
+      }
+    }
+  }
+}
+#footer-container {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  width: 100%;
+  background: $secondaryColor;
+  .footer-info-left {
+    font-family: $primaryFont;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    color: white;
+    width: 33%;
+    text-decoration: none;
+    text-align: center;
+  }
+  .footer-info-center {
+    @extend .footer-info-left;
+    text-align: center;
+  }
+  .footer-info-left {
+    @extend .footer-info-left;
+    text-align: center;
   }
 }
